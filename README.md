@@ -1,3 +1,3 @@
 # Calculator
 
-![My Image](src/Design/Design.jpg)
+![My Image](Design.jpg)
