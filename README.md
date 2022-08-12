@@ -10,7 +10,12 @@
 4. Invert the values
 5. Dark Mode 
 
+### Technologies used:
+HTML
+CSS
+JavaScript
+React
 
 
-# Demo Page here : https://omarmmohhammedd.github.io/Calculator/
+### Demo Page here : https://omarmmohhammedd.github.io/Calculator/
 
