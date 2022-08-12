@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+* {
+    font-family: 'Urbanist', sans-serif;
+    transition: all 0.3s ease-in;
+}
+:root{
+    --dark-mood-background: linear-gradient(31deg ,#000000,#0e3a5c );
+    --dark-mood-wrapper-background: linear-gradient(315deg, #000000 0%, #102d4c 74%);
+    --dark-mood-button-background:#673ab7
+}
+.Container {
+    width: 100%;
+   min-height: 100vh;
+    background-image: linear-gradient(163deg ,#fbb034,#2196f3 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    justify-content: center;
+    height: fit-content;
+    border-radius: 10px;
+    width: 700px;
+    box-shadow: 0px 0px 52px -20px black;
+}
+.Wrapper .Header-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;   
+    margin: 20px 5px; 
+}
+.Wrapper .Header-con .logo{
+    font-size: 40px;
+    margin-left: 20px;
+    color: white;
+}
+.Wrapper .Header-con button{
+    border: none;
+    color: #8b8b8b;
+    background-color: inherit;
+    margin-right: 20px;
+    font-size: 25px;
+    outline: none;
+}
+.Wrapper .Screen{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 15px 10px;
+    justify-content: center;
+    align-items: center;
+}
+#result{
+    text-align: right;
+    font-size: 40px;
+    padding-right: 20px;
+    background-color: #435769;
+    border-radius: 10px;
+    width: 80%;
+    color: white;
+}
+.Btn-con{
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    width: 100%;
+    gap: 5px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 20px;
+}
+
+.Btn-con button{
+width: calc((95%)/5);
+margin: 1%;
+padding: 20px 0px; 
+font-size: 25px;
+background-color: #503cd1;
+color: white;
+border: none;
+border-radius: 15px;
+outline: none;
+}
+.Btn-con button:hover{
+    transform: scale(1.05);
+}
+
+.Btn-con .equal {
+/* grid-column: 3/5; */
+width: calc((80%)/2);
+padding: 20px 0px;
+background-color: rgb(251, 74, 74);
+}
+#dark {
+    background-image:var(--dark-mood-background);
+}
+#dark .Wrapper{
+    background-image: var(--dark-mood-wrapper-background);
+}
+
+#dark .Header-con button{
+    color: #fbb034;
+}
+#dark #result{
+    color: #c98517;
+}
+#dark .Btn-con button{
+    background-color: var(--dark-mood-button-background);
+}
+#dark .Btn-con .equal{
+    background-color: rgb(251, 74, 74);
+}
+
+
+@media  (max-width:730px) {
+    .Wrapper{
+width: 500px;
+    }
+}
+@media (max-width:510px) {
+    .Wrapper{
+        width: 400px;
+    }
+    .Btn-con{
+        margin: 10px 0px;
+        padding: 10px 0px;
+    }
+
+}
+@media (max-width:405px){
+    .Wrapper{
+        width: 320px;
+    }
+    .Wrapper .Header-con{
+        margin: 10px 3px;
+    }
+    .Wrapper .Header-con .logo{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .Wrapper .Header-con button{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .Wrapper .Screen{
+        margin: 8px ;
+    }
+    #result{
+        font-size: 28px;
+    }
+    .Btn-con button{
+        padding: 15px 0px;
+    }
+   .Btn-con .equal{
+        padding: 15px 0px;
+    }
+}
